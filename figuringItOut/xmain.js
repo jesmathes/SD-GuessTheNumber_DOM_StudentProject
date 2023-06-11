@@ -1,3 +1,5 @@
+//? _____________
+
 //! DO NOT ALTER THIS CODE
 const form = document.querySelector("form");
 const btn = document.getElementById("guess-btn");
@@ -32,7 +34,7 @@ startBtn.addEventListener("click", async () => {
         `;
   let startNum = Math.floor(Math.random() * 100 + 1);
 
-  let response = await startCompGuess(startNum);
+  let response = startCompGuess(startNum);
   displayCompGuessReply(response);
 });
 
