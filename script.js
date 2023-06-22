@@ -1,5 +1,5 @@
 
-//  PART 1  #U2_01
+// #U2_01
 
 function randomNumber(userGuess, computersNumber) {
 
@@ -24,8 +24,8 @@ function randomNumber(userGuess, computersNumber) {
   
     // let currentNumber = 1;
   
-  function startCompGuess() {
-    return `Is your number ${currentNumber}?`
+function startCompGuess() {
+  return `Is your number ${currentNumber}?`
   };
   // console.log(startCompGuess());
 
@@ -34,10 +34,30 @@ function randomNumber(userGuess, computersNumber) {
   
 
   // #U2_03 ⬇︎
- let currentNumber = 1;
+
+let currentNumber = 1;
   let createGuess = () => {
     currentNumber = Math.floor(Math.random() * 101);
     return `Is your number ${currentNumber}?`;
   };
   console.log(createGuess());
+
+  // #U2_03 ⬆︎
   
+
+  // #U2_04 ⬇︎
+  
+
+function compGuess(reply) {
+  switch (reply) {
+    case "lower":
+      return `Your number is lower? Is it ${currentNumber}?`;
+    case "higher":
+      return `Your number is higher? Is it ${currentNumber}?`;
+    case "correct":
+      return `I knew it was ${currentNumber}!`;
+    default:
+      return ``;
+  };
+  }
+
